@@ -1,0 +1,9 @@
+﻿{
+	"name": "net.shiftall.pfsignal.Runtime.Udon",
+	"references": [
+		"VRC.SDK3",
+		"VRC.SDKBase",
+		"VRC.Udon",
+		"UdonSharp.Runtime"
+	]
+}
