@@ -5,7 +5,7 @@ on:
     branches:
     - main
     - develop
-    - feature/initial-release
+    - feature/update-vrc-pkg
   workflow_dispatch:
 
 
