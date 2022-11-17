@@ -1,0 +1,46 @@
+name: Create UPM Develop Branch
+
+on:
+  push:
+    branches:
+    - main
+    - develop
+    - feature/initial-release
+  workflow_dispatch:
+
+
+jobs:
+
+  create-upm-branch-develop:
+  
+    name: update upm develop branch
+    
+    runs-on: ubuntu-latest
+
+    env: 
+      PKG_ROOT: Packages/net.shiftall.pfsignal
+
+    steps:
+
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          lfs: 'true'
+
+      - name: update upm branch
+        run: |
+          echo '### head info'
+          git log -1
+          echo '### split upm branch'
+          git subtree split -P "$PKG_ROOT" -b upm-develop
+          echo '### update remote upm branch'
+          git push origin upm-develop
+
+      - name: Notify to Typetalk
+        if: always()
+        uses: shomatan/typetalk-action@master
+        env:
+          TYPETALK_TOKEN: ${{ secrets.TYPETALK_TOKEN }}
+        with:
+          topic-id: 143556
+          message: "${{ github.job }} ${{ job.status }}"
