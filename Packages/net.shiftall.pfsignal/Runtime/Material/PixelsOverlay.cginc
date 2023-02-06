@@ -27,7 +27,7 @@ fixed4 frag (UNITY_VPOS_TYPE pos : VPOS) : SV_Target {
     pos.xy = round(pos.xy);
     uint hCenter = s.x / 2;
     uint vCenter = s.y /2;
-    uint left = s.x * 0.03;
+    uint left = s.x * 0.1;
 
     // Finder Signals
     if (pos.x > hCenter.x - halfSize && pos.x <= hCenter + halfSize)
