@@ -26,13 +26,11 @@ fixed4 frag (UNITY_VPOS_TYPE pos : VPOS) : SV_Target {
 
     pos.xy = round(pos.xy);
     uint hCenter = s.x / 2;
-    uint vCenter = s.y /2;
-    uint left = s.x * 0.03;
-
+    uint top = s.y - (s.y * 0.03);
+    
     // Finder Signals
     if (pos.x > hCenter.x - halfSize && pos.x <= hCenter + halfSize)
     {
-        uint top = s.y - (s.y * 0.03);
         uint bottom = s.y * 0.03;
         // top
         if(pos.y > top - halfSize && pos.y <= top + halfSize)
@@ -47,9 +45,10 @@ fixed4 frag (UNITY_VPOS_TYPE pos : VPOS) : SV_Target {
     }
 
     // Signal
-    if (pos.x > left - halfSize && pos.x <= left + halfSize)
+    uint sX = hCenter + s.x * 0.04;
+    if (pos.x > sX - halfSize && pos.x <= sX + halfSize)
     {
-        if(pos.y > vCenter - halfSize && pos.y <= vCenter + halfSize)
+        if(pos.y > top - halfSize && pos.y <= top + halfSize)
         {
             return _PixelColor;
         }
