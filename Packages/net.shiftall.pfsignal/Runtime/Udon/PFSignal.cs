@@ -55,9 +55,9 @@ namespace net.shiftall.pfsignal.Udon
             }
         }
         
-        public void OnEnter(PFThermalRequest m)
+        public void OnStay(PFThermalRequest m)
         {
-            Log($"on enter: {m.ToString()}");
+            // Log($"on stay: {m.ToString()}");
             signalTextures[(int)m].SetActive(true);
             signalTextures[(int)PFThermalRequest.Off].SetActive(false);
         }

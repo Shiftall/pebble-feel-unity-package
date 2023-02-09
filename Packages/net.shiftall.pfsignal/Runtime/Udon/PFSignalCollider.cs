@@ -35,12 +35,12 @@ namespace net.shiftall.pfsignal.Udon
             Log("Unregister " + $"{listener.name}");
         }
     
-        public override void OnPlayerTriggerEnter(VRCPlayerApi player)
+        public override void OnPlayerTriggerStay(VRCPlayerApi player)
         {
             if (player != Networking.LocalPlayer) return;
             if (_pfSignal == null) return;
-            _pfSignal.OnEnter(pfThermalRequest);
-            Log("OnPlayerTriggerEnter() : " + player.displayName);
+            _pfSignal.OnStay(pfThermalRequest);
+            // Log("OnPlayerTriggerStay() : " + player.displayName);
         }
 
         public override void OnPlayerTriggerExit(VRCPlayerApi player)
