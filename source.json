@@ -23,13 +23,6 @@
                 "https://github.com/vrchat-community/UdonSharp/releases/download/1.1.7/com.vrchat.UdonSharp.zip",
                 "https://github.com/vrchat-community/UdonSharp/releases/download/1.1.6/com.vrchat.UdonSharp-1.1.6.zip"
             ]
-        },
-        {
-            "name":"net.shiftall.pfsignal",
-            "releases":[
-                "https://github.com/Shiftall/pebble-feel-unity-package/archive/refs/tags/0.4.1.zip",
-                "https://github.com/Shiftall/pebble-feel-unity-package/archive/refs/tags/0.4.0.zip"
-            ]
         }
     ]
 }
