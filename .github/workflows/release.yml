@@ -6,7 +6,7 @@ on:
     branches: 
       - main
       - feature/vcc-listing
-    paths: Packages/net.shiftall.pfsignal/**
+    # paths: Packages/net.shiftall.pfsignal/**
 
 env:
   packageName: "net.shiftall.pfsignal"
