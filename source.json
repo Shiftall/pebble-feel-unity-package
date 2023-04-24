@@ -27,8 +27,8 @@
         {
             "name":"net.shiftall.pfsignal",
             "releases":[
-                "https://github.com/Shiftall/pebble-feel-unity-package/releases/download/0.4.1/PFSignal.unitypackage",
-                "https://github.com/Shiftall/pebble-feel-unity-package/releases/download/0.4.0/PFSignal.unitypackage"
+                "https://github.com/Shiftall/pebble-feel-unity-package/archive/refs/tags/0.4.1.zip",
+                "https://github.com/Shiftall/pebble-feel-unity-package/archive/refs/tags/0.4.0.zip"
             ]
         }
     ]
