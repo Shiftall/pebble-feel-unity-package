@@ -1,12 +1,11 @@
 name: Build Release
 
 on: 
-  push:
-    branches:
-      - feature/vcc-listing
   workflow_dispatch:
   push:
-    branches: main
+    branches: 
+      - main
+      - feature/vcc-listing
     paths: Packages/net.shiftall.pfsignal/**
 
 env:
