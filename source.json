@@ -14,7 +14,8 @@
     },
     "bannerUrl":"banner.png",
     "githubRepos":[
-        "vrchat-community/clientsim"
+        "vrchat-community/clientsim",
+        "Shiftall/pebble-feel-unity-package"
     ],
     "packages":[
         {
