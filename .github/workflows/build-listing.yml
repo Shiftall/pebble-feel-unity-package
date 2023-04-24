@@ -7,6 +7,7 @@ env:
   
 on: 
   push:
+    paths: source.json
     branches:
     - feature/vcc-listing
   workflow_dispatch:
