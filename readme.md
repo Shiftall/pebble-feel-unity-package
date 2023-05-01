@@ -1,6 +1,8 @@
 # Pebble Feel Unity Package for VRChat World SDK
 
-This package is for VRChat World control of Pebble Feel.
+This package is for controlling Pebble Feel from VRChat World.   
+Please import from the [VCC Listing page](https://shiftall.github.io/pebble-feel-unity-package/) using the VRchat Creator Companion.
+
 
 ### Documents
 
