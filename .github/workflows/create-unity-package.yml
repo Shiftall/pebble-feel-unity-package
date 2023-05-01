@@ -61,7 +61,7 @@ jobs:
 
       - name: Notify to Typetalk
         if: always()
-        uses: ymmtyuhei/typetalk-action@develop
+        uses: shomatan/typetalk-action@master
         env:
           TYPETALK_TOKEN: ${{ secrets.TYPETALK_TOKEN }}
         with:
