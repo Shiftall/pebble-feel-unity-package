@@ -1,0 +1,29 @@
+{
+    "name":"Pebble Feel Signal",
+    "id":"net.shiftall.pfsignal",
+    "url":"https://shiftall.github.io/pebble-feel-unity-package/index.json",
+    "author":{
+        "email":"support@shiftall.net",
+        "name":"Shiftall inc.",
+        "url":"https://shiftall.net"
+    },
+    "description":"Pebble Feel Signal",
+    "infoLink":{
+        "url":"https://github.com/Shiftall/pebble-feel-unity-package",
+        "text":"View on GitHub"
+    },
+    "bannerUrl":"banner.png",
+    "githubRepos":[
+        "vrchat-community/clientsim",
+        "Shiftall/pebble-feel-unity-package"
+    ],
+    "packages":[
+        {
+            "name":"com.vrchat.udonsharp",
+            "releases":[
+                "https://github.com/vrchat-community/UdonSharp/releases/download/1.1.7/com.vrchat.UdonSharp.zip",
+                "https://github.com/vrchat-community/UdonSharp/releases/download/1.1.6/com.vrchat.UdonSharp-1.1.6.zip"
+            ]
+        }
+    ]
+}
