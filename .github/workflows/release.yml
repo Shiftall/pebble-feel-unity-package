@@ -69,4 +69,4 @@ jobs:
           TYPETALK_TOKEN: ${{ secrets.TYPETALK_TOKEN }}
         with:
           topic-id: 143556
-          message: "${{ github.job }} ${{ job.status }}"
+          message: "Build Release : ${{ github.job }} ${{ job.status }}"

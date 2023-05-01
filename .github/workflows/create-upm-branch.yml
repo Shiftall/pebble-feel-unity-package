@@ -41,4 +41,4 @@ jobs:
           TYPETALK_TOKEN: ${{ secrets.TYPETALK_TOKEN }}
         with:
           topic-id: 143556
-          message: "${{ github.job }} ${{ job.status }}"
+          message: "Create UPM Branch : ${{ github.job }} ${{ job.status }}"
