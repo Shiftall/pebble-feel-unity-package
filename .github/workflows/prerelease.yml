@@ -6,7 +6,7 @@ on:
     branches: 
       - main
       - develop
-      - feature/vcc-listing
+      - feature/multiple-pfs
 
 env:
   packageName: "net.shiftall.pfsignal"

@@ -1,15 +1,15 @@
 {
 	"name" : "net.shiftall.pfsignal",
 	"displayName" : "Pebble Feel Signal",
-	"version" : "0.4.2",
+	"version" : "0.4.3",
 	"unity" : "2019.4",
 	"description" : "Pebble Feel Signal Package",
 	"vrchatVersion": "2022.1.1",
-    "vpmDependencies" : {
-		"com.vrchat.base": "3.1.13",
-		"com.vrchat.worlds": "3.1.13",
-		"com.vrchat.udonsharp": "1.1.7"
-    },
+	"vpmDependencies": {
+		"com.vrchat.base": "3.2.0",
+		"com.vrchat.worlds": "3.2.0",
+		"com.vrchat.udonsharp": "1.1.8"
+	},
 	"author": {
 		"name": "Shiftall inc.",
 		"email": "support@shiftall.net",
@@ -20,6 +20,11 @@
             "displayName": "Sample Scene",
             "description": "Sample scene for Pebble Feel Signal",
             "path": "Samples~/SampleScene"
+        },
+		{
+            "displayName": "Multi Area Sample Scene",
+            "description": "Example scene. Using multiple Pebble Feel Signal instances.",
+            "path": "Samples~/MultiAreaSample"
         }
     ]
 }
