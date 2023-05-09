@@ -8,7 +8,7 @@ env:
 on: 
   push:
     branches:
-      - feature/vcc-listing
+      - feature/multiple-pfs
   workflow_dispatch:
   workflow_run:
     workflows: [Build Release]
